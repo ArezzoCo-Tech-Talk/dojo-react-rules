@@ -453,7 +453,7 @@ function withForm(WrapperComponent) {
   }
 }
 
-class FormulárioEndereço() {
+class FormulárioEndereço {
   // ...
 }
 
