@@ -212,7 +212,7 @@ function CustomButton({ children, ...props }) {
     setToggle(!toggle);
   }
   
-  return <Button onClick={handleClick} {...props}>{button}</Button>; // componente react Button
+  return <Button setToggle={handleToggle} {...props}>{button}</Button>; // componente react Button
 }
 ```
 
@@ -472,7 +472,7 @@ function useForm() {
   return { fields, setFields };
 }
 
-class FormulárioEndereço() {
+function FormulárioEndereço() {
   const { fields, setFields } = useForm();
   // ...
 }
